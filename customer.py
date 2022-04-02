@@ -16,4 +16,7 @@ class Customer:
         self.name = input("What is your name?")
 
     def add_item(self):
-        
+        me.put_in_cart()
+
+    def total_value(self):
+        me.get_cost

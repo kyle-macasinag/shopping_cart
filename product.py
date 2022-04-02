@@ -6,6 +6,12 @@ class Product:
         self.price = ()
         self.category = ""
 
+    def dump(self):
+        print(self.product)
+        delete = input("Would you like to keep your cart? Y/N ")
+        if delete == "N":
+            self.product.clear()
+
     def add_product(self):
         selecting = True
         print("What would you like to buy?")
@@ -25,6 +31,7 @@ class Product:
         if confirmation == "N":
             print("Okay, let's review your list")
             selecting = False
+
         
 
     def calculate_cost(self):
@@ -50,9 +57,3 @@ class Product:
                 self.category == "Baked Goods"
             elif item == "Ibuprofen":
                 self.category == "Pharmacy"
-    
-    def dump(self):
-        print(self.product)
-        delete = input("Would you like to keep your cart? Y/N ")
-        if delete == "N":
-            self.product.clear()

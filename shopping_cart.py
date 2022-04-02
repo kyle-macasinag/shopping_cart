@@ -8,18 +8,24 @@ from product import Product
 
 class Shopping_Cart:
     def __init__(self):
-        self.products_in_cart = []
-        self.total_price = ()
+        cart = Product()
+        self.products_in_cart = cart.product
+
+    
     
     def put_in_cart(self):
-        selecting = True
-        while selecting == True:
-             select = input("The items available are: Milk, Apples, Bread, Butter, and Ibuprofen.  What would you like to buy?  Enter OK to continue.")
-             if select == "OK":
-                 pass
-             else: self.products_in_cart.append(select)
-             print(self.products_in_cart)
-       
+        cart = Product()
+        cart.add_product()
+        print(cart.product)
+    pass
+
+    def get_cost(self):
+        cart = Product
+        cart.calculate_cost
+        cart.dump()
+        
+        
+        
         # while selecting == True:
         #     if select == "Milk":
         #         self.products_in_cart.append("Milk")
