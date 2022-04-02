@@ -17,10 +17,10 @@ class Shopping_Cart:
         cart = Product()
         cart.add_product()
         print(cart.product)
-    pass
+    
 
     def get_cost(self):
-        cart = Product
+        cart = Product()
         cart.calculate_cost
         cart.dump()
         

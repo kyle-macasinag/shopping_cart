@@ -5,7 +5,7 @@ from shopping_cart import Shopping_Cart
     #Will have a methof to add new product to cart
     #Will have a methof to view all products in cart
     
-me = Shopping_Cart
+
 
 class Customer:
     def __init__(self):
@@ -13,10 +13,13 @@ class Customer:
 
 
     def customer_name(self):
+        me = Shopping_Cart()
         self.name = input("What is your name?")
 
     def add_item(self):
+        me = Shopping_Cart()
         me.put_in_cart()
 
     def total_value(self):
+        me = Shopping_Cart()
         me.get_cost

@@ -3,9 +3,9 @@
 from customer import Customer
 from product import Product
 
-patron = Customer
-goods = Product
+patron = Customer()
+goods = Product()
 
 patron.customer_name()
 patron.add_item()
-patron.total_value()
+patron.total_value() #Needs Fixing

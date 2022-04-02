@@ -1,7 +1,7 @@
     #Product class will have properties to keep track of the procuct's name, price, and category
     #The product class's initializer will take in the initial values for the name, price, and category via parameters
 class Product:
-    def __init__(self, product, price, category):
+    def __init__(self):
         self.product = []
         self.price = ()
         self.category = ""
@@ -27,10 +27,10 @@ class Product:
                 self.product.append("Butter")
             elif selections == "Ibuprofen":
                 self.product.append("Ibuprofen")
-        confirmation = input("Is there anything else you would like to buy? Y/N ")
-        if confirmation == "N":
-            print("Okay, let's review your list")
-            selecting = False
+            confirmation = input("Is there anything else you would like to buy? Y/N ")
+            if confirmation == "N":
+                print("Okay, let's review your list")
+                selecting = False
 
         
 
